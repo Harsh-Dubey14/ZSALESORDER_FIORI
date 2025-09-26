@@ -1,0 +1,4 @@
+@EndUserText.label: 'service definition for salesorder'
+define service ZSD_SOH_FIORI {
+  expose ZC_SOH_FIORI;
+}

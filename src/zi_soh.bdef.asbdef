@@ -1,0 +1,14 @@
+managed implementation in class zbp_i_soh unique;
+strict ( 2 );
+
+define behavior for ZI_SOH //alias <alias_name>
+persistent table I_SALESORDER
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) SalesOrder;
+}
